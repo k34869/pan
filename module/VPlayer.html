@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Time Science">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
+    <title>主内资源 - Time Science</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dashjs/dist/dash.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+    <style>
+        #main{padding:15px 0}.download_botton{-webkit-tap-highlight-color:rgba(0,0,0,0);text-align:center;display:none;background-color:#000;color:#fff;cursor:pointer;font-weight:bold;text-decoration:none;padding:.4rem .8rem;margin:1.5rem auto;max-width:150px;user-select:none;border:1px solid #252525;border-radius:5px;box-shadow:0 5px 10px rgba(0,0,0,0.12)}.download_botton:hover{border:1px solid #363535;box-shadow:0 5px 10px rgba(54,53,53,0.2);background-color:#646464}i.fa-arrow-circle-o-down{position:static;font-size:16px;color:white}.aplayer-title{color:grey}.vplayer{padding:0 14px}video{position:relative;right:1px;border:1px solid #646464;width:100%;border-radius:4px}
+    </style>
+</head>
+<body>
+<!-- 顶部布局 -->
+<div class="top_layout">
+	<a class="top_a" href="/index.html">
+		<img class="top_logo" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img>
+		<img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
+	</a>
+</div>
+<!-- /顶部布局 -->
+
+<!-- 主体内容 -->
+<div class="route">
+    <p id="route_n"></p>
+</div>
+<div id="main">
+<div class="vplayer">
+    <video controls="controls" title="">
+        <source src="" type="video/mp4">
+        <track kind="subtitles" src="">
+    </video>
+</div>
+<script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+dcr=decodeURI(getQueryVariable("r"));
+na=decodeURI(getQueryVariable("na"));
+url=decodeURI(getQueryVariable("url"));
+sub=decodeURI(getQueryVariable("sub"));
+    if(na !== "false" || url !== "false"){
+        if(dcr == 'MV-MAD-无损音质'){
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span>/</span> <a href="/我的视频">我的视频</a> <span>/</span> <a href="/我的视频/MV-MAD-无损音质">MV-MAD-无损音质</a> <span>/</span> <a href="">'+na+'</a>';
+        }
+    }
+    if(na == "false" || url == "false"){
+        na="张芸京 - 偏爱"
+        url="https://tsfiles1.oss-cn-beijing.aliyuncs.com/MV-MAD/%E5%BC%A0%E8%8A%B8%E4%BA%AC%20-%20%E5%81%8F%E7%88%B1.mp4"
+    }
+document.getElementsByTagName('video')[0].title=na;
+document.getElementsByTagName('source')[0].src=url;
+document.getElementsByTagName('track')[0].src=sub;
+</script>
+<a class="download_botton" href=""><i class="fa fa-arrow-circle-o-down"></i> 下载</a>
+<script>
+    vu=getQueryVariable('url');
+    if(vu !== false){
+        document.getElementsByClassName('download_botton')[0].href=url;
+        document.getElementsByClassName('download_botton')[0].style.display='block'
+    }
+</script>
+</div>
+<!-- /主体内容 -->
+<script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/end.script.js"></script>
+<!-- 底部布局 -->
+<div class="bottom">
+    <p class="bottom_inline">©Copyright <a href="https://www.timeic.xyz/">Time Science</a> 2021.<br>All Rights Reserved</p>
+</div>
+<!-- /底部布局 -->
+</body>
+</html>

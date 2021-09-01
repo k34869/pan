@@ -1,0 +1,1 @@
+setTimeout(document.getElementsByClassName("under")[0].click(),400);var images=new Array();function preload(){for(i=0;i<preload.arguments.length;i++){images[i]=new Image();images[i].src=preload.arguments[i]}}preload("https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title2.png","https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo2.png");

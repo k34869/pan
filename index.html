@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Time Science">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
+    <title>主内资源 - Time Science</title>
+    <script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/lod.script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/normalize.min.css">
+</head>
+<body>
+<!-- 顶部布局 -->
+<div class="top_layout">
+	<a class="top_a" href="index.html">
+		<img class="top_logo" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img>
+		<img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
+	</a>
+    <form action="index.html">
+        <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}">
+    </form>
+</div>
+<!-- /顶部布局 -->
+
+<!-- 主体内容 -->
+<div class="route">
+    <p><a id="route_url" href="index.html">🚩Home</a></p>
+</div>
+<div id="main">
+    <div class="under" title="文档材料">
+        <div class="under_img"><i class="fa fa-folder-o"></i></div>
+        <div class="under_text">
+            <p><a href="/文档材料"><span class="under_title">文档材料</span></a></p>
+            <p class="under_info">类型：Directory</p>
+        </div>
+    </div>
+
+    <div class="under" title="应用软件">
+        <div class="under_img"><i class="fa fa-folder-o"></i></div>
+        <div class="under_text">
+            <p><a href="/应用软件"><span class="under_title">应用软件</span></a></p>
+            <p class="under_info">类型：Directory</p>
+        </div>
+    </div>
+
+    <div class="under" title="我的音频">
+        <div class="under_img"><i class="fa fa-folder-o"></i></div>
+        <div class="under_text">
+            <p><a href="/我的音频"><span class="under_title">我的音频</span></a></p>
+            <p class="under_info">类型：Directory</p>
+        </div>
+    </div>
+
+    <div class="under" title="我的图片">
+        <div class="under_img"><i class="fa fa-folder-o"></i></div>
+        <div class="under_text">
+            <p><a href="/我的图片"><span class="under_title">我的图片</span></a></p>
+            <p class="under_info">类型：Directory</p>
+        </div>
+    </div>
+
+</div>
+<!-- /主体内容 -->
+
+<!-- 底部布局 -->
+<div class="bottom">
+    <p class="bottom_inline">©Copyright <a href="https://www.timeic.xyz/">Time Science</a> 2021.<br>All Rights Reserved</p>
+</div>
+<!-- /底部布局 -->
+
+<script type="text/javascript">
+pall = document.getElementsByClassName("under").length;
+for(i=0;i<pall;i++){
+under_title=document.getElementsByClassName('under')[i].title;
+    if(under_title == undefined || under_title == ""){
+        console.log(null)
+    }
+    else{
+        if(url_var == "false"){
+            document.getElementsByClassName('under')[i].style.display='flex';
+        }
+        else if(under_title.indexOf(url_var) != -1){
+            document.getElementsByClassName('under')[i].style.display='flex';
+            
+        }
+        else{
+            console.log(null);
+        }
+        var content = document.getElementsByClassName("under_title")[i];
+        var contents = content.innerHTML;
+        var values = contents.split(url_var);
+        content.innerHTML = values.join('<span style="color: #e46d8f;">' + url_var + '</span>');
+    }
+}
+if(url_var == "false" || url_var == ""){
+    console.log(null)
+}else{
+    document.getElementById('text').value=url_var;
+}
+</script>
+<script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/end.script.js"></script>
+</body>
+</html>

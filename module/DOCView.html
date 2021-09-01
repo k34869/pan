@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Time Science">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
+    <title>主内资源 - Time Science</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/font-awesome.min.css">
+</head>
+<body>
+<iframe id="divsc" src="" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" title=""></iframe>
+<script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+    url=decodeURI(getQueryVariable("url"));
+    if(url == "false"){
+        url="https://tsfiles1.oss-cn-beijing.aliyuncs.com/tmp/PC%E9%80%89%E8%B4%AD.docx"
+    }
+    document.getElementById('divsc').src='https://view.officeapps.live.com/op/embed.aspx?src='+url;
+    document.getElementById('divsc').height=document.documentElement.clientHeight;
+    window.onload = function(){
+        watchChangeSize();
+    }
+    window.onresize=function(){  
+        watchChangeSize();
+    }
+    function watchChangeSize (){
+        var offsetHei = document.documentElement.clientHeight;
+        document.getElementById('divsc').height=document.documentElement.clientHeight;
+    }
+</script>
+<a class="download_botton" href=""><div class="fa fa-arrow-circle-o-down" title="下载" style="text-align:center;width: 15px;height: 15px;position: fixed;border-radius: 8px; bottom: 30px;right:0;padding: 7px 8px;background-color:rgba(64,224,208,0.8);"></div></a>
+<a href="/index.html"><div class="fa fa-home" title="返回主目录" style="text-align:center;width: 15px;height: 15px;position: fixed;border-radius: 8px; bottom: 65px;right:0;padding: 7px 8px;background-color: rgba(64,224,208,0.8);"></div></a>
+<a href="./index.html"><div class="fa fa-mail-reply-all" title="返回目录" style="text-align:center;width: 15px;height: 15px;position: fixed;border-radius: 8px; bottom: 100px;right:0;padding: 7px 8px;background-color: rgba(64,224,208,0.8);"></div></a>
+<script>
+    if(url !== false){
+        document.getElementsByClassName('download_botton')[0].href=url;
+    }
+</script>
+<!-- /主体内容 -->
+<script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/end.script.js"></script>
+</body>
+</html>
