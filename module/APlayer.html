@@ -51,6 +51,8 @@ cov=decodeURI(getQueryVariable("c"));
     if(na !== "false" || url !== "false"){
         if(dcr == '录音'){
             document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/录音">录音</a> <span class="inl">/</span> <a href="">'+na+'</a>';
+        }else if(dcr == '正念入门'){
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/正念入门">正念入门</a> <span class="inl">/</span> <a href="">'+na+'</a>';
         }
     }
     if(na == "false" || url == "false"){
