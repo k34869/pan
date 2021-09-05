@@ -48,11 +48,14 @@ na=decodeURI(getQueryVariable("na"));
 art=decodeURI(getQueryVariable("art"));
 url=decodeURI(getQueryVariable("url"));
 cov=decodeURI(getQueryVariable("c"));
+lrc=decodeURI(getQueryVariable("lrc"));
     if(na !== "false" || url !== "false"){
         if(dcr == '录音'){
             document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/录音">录音</a> <span class="inl">/</span> <a href="">'+na+'</a>';
         }else if(dcr == '正念入门'){
             document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/正念入门">正念入门</a> <span class="inl">/</span> <a href="">'+na+'</a>';
+        }else if(dcr == 'HiFi-无损音乐'){
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/HiFi-无损音乐">HiFi-无损音乐</a> <span class="inl">/</span> <a href="">'+na+'</a>';
         }
     }
     if(na == "false" || url == "false"){
@@ -64,6 +67,7 @@ cov=decodeURI(getQueryVariable("c"));
     if(art == "false"){
         art="audio"
     }
+    if(lrc == "false"){
     const ap = new APlayer({
         container: document.getElementById('aplayer'),
         audio: [{
@@ -73,6 +77,19 @@ cov=decodeURI(getQueryVariable("c"));
             cover: cov
         }]
     });
+    }else{
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        lrcType: 3,
+        audio: [{
+            name: na,
+            artist: art,
+            url: url,
+            cover: cov,
+            lrc: lrc
+        }]
+    });
+    }
 </script>
 <a class="download_botton" href=""><i class="fa fa-arrow-circle-o-down"></i> 下载</a>
 <script>
