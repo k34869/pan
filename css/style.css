@@ -156,39 +156,35 @@ i.fa:hover{
         margin-right: 15px;
     }
 }
-@media only screen and (max-width: 372px) {
-    #text{
-        width: 140px;
-    }
+@media only screen and (max-width: 390px) {
+	#text {
+	width:125px
 }
-@media only screen and (max-width: 352px) {
-    #text{
-        width: 120px;
-    }
+}@media only screen and (max-width:352px) {
+	#text {
+	width:100px
 }
-@media only screen and (max-width: 332px) {
-    #text{
-        width: 100px;
-    }
+}@media only screen and (max-width:330px) {
+	#text {
+	width:80px
 }
-@media only screen and (max-width: 312px) {
-    #text{
-        width: 80px;
-    }
+}@media only screen and (max-width:310px) {
+	#text {
+	width:60px
 }
-@media only screen and (max-width: 290px) {
-    .top_layout{
-        text-align: center;
-        margin-left: -10px;
-    }
-    form{
-        float: none;
-    }
-    #text{
-        width: 160px;
-        margin: 0 -15px 10px 0;
-    }
-    .route{
-        margin-top: 128px;
-    }
+}@media only screen and (max-width:290px) {
+	.top_layout {
+	text-align:center;
+	margin-left:-10px
+}
+form {
+	float:none
+}
+#text {
+	width:160px;
+	margin:0 -15px 10px 0
+}
+.route {
+	margin-top:128px
+}
 }
