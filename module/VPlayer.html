@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Time Science">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
-    <title>主内资源 - Time Science</title>
+    <title>时科资源 - Time Science</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/font-awesome.min.css">
@@ -52,6 +52,10 @@ dcr=decodeURI(getQueryVariable("r"));
 na=decodeURI(getQueryVariable("na"));
 url=decodeURI(getQueryVariable("url"));
 sub=decodeURI(getQueryVariable("sub"));
+lo=decodeURI(getQueryVariable("lo"));
+    if(lo == "1"){
+        document.getElementsByTagName('video')[0].setAttribute('loop','');
+    }
     if(na !== "false" || url !== "false"){
         if(dcr == 'MV-MAD-无损音质'){
             document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的视频">我的视频</a> <span class="inl">/</span> <a href="/我的视频/MV-MAD-无损音质">MV-MAD-无损音质</a> <span class="inl">/</span> <a href="">'+na+'</a>';

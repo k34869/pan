@@ -156,22 +156,22 @@ i.fa:hover{
         margin-right: 15px;
     }
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 372px) {
     #text{
         width: 140px;
     }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 352px) {
     #text{
         width: 120px;
     }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 332px) {
     #text{
         width: 100px;
     }
 }
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 312px) {
     #text{
         width: 80px;
     }
