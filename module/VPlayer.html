@@ -58,9 +58,11 @@ lo=decodeURI(getQueryVariable("lo"));
     }
     if(na !== "false" || url !== "false"){
         if(dcr == 'MV-MAD-无损音质'){
-            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的视频">我的视频</a> <span class="inl">/</span> <a href="/我的视频/MV-MAD-无损音质">MV-MAD-无损音质</a> <span class="inl">/</span> <a href="">'+na+'</a>';
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的视频/">我的视频</a> <span class="inl">/</span> <a href="/我的视频/MV-MAD-无损音质/">MV-MAD-无损音质</a> <span class="inl">/</span> <a href="">'+na+'</a>';
         }else if(dcr == 'HiFi-无损音乐'){
-            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频">我的音频</a> <span class="inl">/</span> <a href="/我的音频/HiFi-无损音乐">HiFi-无损音乐</a> <span class="inl">/</span> <a href="">'+na+'</a>';
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的音频/">我的音频</a> <span class="inl">/</span> <a href="/我的音频/HiFi-无损音乐/">HiFi-无损音乐</a> <span class="inl">/</span> <a href="">'+na+'</a>';
+        }else if(dcr == '短视频'){
+            document.getElementById('route_n').innerHTML='<a href="/index.html">🚩Home</a> <span class="inl">/</span> <a href="/我的视频/">我的视频</a> <span class="inl">/</span> <a href="/我的视频/短视频/">短视频</a> <span class="inl">/</span> <a href="">'+na+'</a>';
         }
     }
     if(na == "false" || url == "false"){

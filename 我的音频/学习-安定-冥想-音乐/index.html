@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<meta name="author" content="Time Science">
+	<meta name="author" content="Time Science">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
     <title>时科资源 - Time Science</title>
     <script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/lod.script.js"></script>
@@ -19,7 +19,7 @@
 		<img class="top_logo" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img>
 		<img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
 	</a>
-    <form action="/我的音频/index.html">
+    <form action="index.html">
         <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}">
     </form>
 </div>
@@ -27,41 +27,26 @@
 
 <!-- 主体内容 -->
 <div class="route">
-    <p><a id="route_url" href="/index.html">🚩Home</a> <span class="inl">/</span> <a id="route_url" href="/我的音频/">我的音频</a></p>
+    <p><a id="route_url" href="/index.html">🚩Home</a> <span class="inl">/</span> <a id="route_url" href="/我的音频/">我的音频</a> <span class="inl">/</span> <a href="/我的音频/学习-安定-冥想-音乐/">学习-安定-冥想-音乐</a></p>
 </div>
 <div id="main">
-<div class="under" title="录音">
-    <div class="under_img"><i class="fa fa-folder-o"></i></div>
+
+<div class="under" title="月.mp3">
+    <div class="under_img"><i class="fa fa-file-audio-o"></i></div>
     <div class="under_text">
-        <p><a href="/我的音频/录音/"><span class="under_title">录音</span></a></p>
-        <p class="under_info">类型：Directory</p>
+        <p><a href="/module/APlayer.html?r=学习-安定-冥想-音乐&na=月.mp3&art=纯音乐&url=https://cdn.jsdelivr.net/gh/k34869/MYZY/月.mp3&c=https://cdn.jsdelivr.net/gh/k34869/MYZY/IMG_20211102_104444.jpg"><span class="under_title">月.mp3</span></a></p>
+        <p class="under_info">类型：audio/flac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大小：8.2MB</p>
     </div>
 </div>
 
-<div class="under" title="HiFi-无损音乐">
-    <div class="under_img"><i class="fa fa-folder-o"></i></div>
+<div class="under" title="﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌.mp3">
+    <div class="under_img"><i class="fa fa-file-audio-o"></i></div>
     <div class="under_text">
-        <p><a href="/我的音频/HiFi-无损音乐/"><span class="under_title">HiFi-无损音乐</span></a></p>
-        <p class="under_info">类型：Directory</p>
+        <p><a href="/module/APlayer.html?r=学习-安定-冥想-音乐&na=﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌.mp3.mp3&art=纯音乐&url=https://cdn.jsdelivr.net/gh/k34869/MYZY/﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌.mp3&c=https://cdn.jsdelivr.net/gh/k34869/MYZY/~~~.jpg"><span class="under_title">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌.mp3</span></a></p>
+        <p class="under_info">类型：audio/flac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大小：2.57MB</p>
     </div>
 </div>
-
-<div class="under" title="学习-安定-冥想-音乐">
-    <div class="under_img"><i class="fa fa-folder-o"></i></div>
-    <div class="under_text">
-        <p><a href="/我的音频/学习-安定-冥想-音乐"><span class="under_title">学习-安定-冥想-音乐</span></a></p>
-        <p class="under_info">类型：Directory</p>
-    </div>
-</div>
-
-<div class="under" title="正念入门">
-    <div class="under_img"><i class="fa fa-folder-o"></i></div>
-    <div class="under_text">
-        <p><a href="/我的音频/正念入门/"><span class="under_title">正念入门</span></a></p>
-        <p class="under_info">类型：Directory</p>
-    </div>
-</div>
-
+    
 </div>
 <!-- /主体内容 -->
 
@@ -84,7 +69,6 @@ pall = document.getElementsByClassName("under").length;
             }
             else if(under_title.indexOf(url_var) != -1){
                 document.getElementsByClassName('under')[i].style.display='flex';
-                
             }
             else{
                 console.log(null);
