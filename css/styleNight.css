@@ -1,14 +1,14 @@
 body{
-    background: #1f1c20;
+    background: rgb(254,243,235);
     color: white;
 }
 span.inl{
     color: #999;
 }
 .top_layout{
-    background: #1f1c20;
+    background-color: #f3f3f3;
+    box-shadow: 0.1px 0.2px 5px grey;
     width:100%;
-    border-bottom: 1px solid #404040;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -37,11 +37,11 @@ form{
     display: none;
     padding:8px;
     margin-top:14px;
-    border:0.5px solid grey;
+    border:1px solid grey;
     border-radius:10px 0 0 10px;
     width:162px;
-    background:#1f1c20;
-    color:white;
+    background:transparent;
+    color:rgb(85, 85, 85);
     border-right: none;
     outline: none;
 }
@@ -52,13 +52,13 @@ form{
 .fa.fa-search{
     font-size: 18px;
     line-height: 62px;
-    color:#ebdfdf;
+    color: rgb(116, 112, 112);
 }
 .fa.fa-adjust{
     margin:0 66px 0 15px;
     font-size: 18px;
     line-height: 62px;
-    color: #ebdfdf;
+    color: rgb(116, 112, 112);
 }
 .tsCloose{
     display: none;
@@ -66,20 +66,21 @@ form{
     padding:8px;
     padding-left: 11px;
     margin-top:14px;
-    border:0.5px solid grey;
+    border:1px solid grey;
     border-radius:0 10px 10px 0;
     width:18px;
     border-left: none;
 }
 .tsCloose:hover{
-    background-color: #464646;
+    background-color: #555555;
 }
 .fa.fa-times{
     font-size: 17px;
-    color:#ebdfdf;
+    color:#b1b1b1;
 }
 #main{
-    box-shadow:rgb(60, 60, 60) -0.01px -0.01px 1.5px 0px;
+    box-shadow: 0 5px 10px 0 rgb(144 164 174 / 40%);
+    background-color: white;
     max-width: 810px;
     width: calc(100% - 10px);
     margin: 0 auto;
@@ -91,25 +92,25 @@ form{
     font-size: 14px;
 }
 .route a{
-    color: white;
+    color: #858585;;
     text-decoration: none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .route a:hover{
-    color: #999;
+    color: rgb(0, 0, 0);
 }
 .under{
     display: flex;
     align-items: center;
     display: none;
     overflow: hidden;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(196, 196, 196);
 }
 .under a{
     transition: 0.2s all ease-in-out;
 }
 .under:hover{
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(141, 141, 141, 0.2);
 }
 .under_img{
     display:table-cell;
@@ -121,10 +122,10 @@ form{
 }
 i.fa{
     font-size: 32px;
-    color: #c0aeca;
+    color: #b98dd1;
 }
 i.fa:hover{
-    color: white;
+    color: #e04bd9;
 }
 .under_text{
     padding: 10px 0;
@@ -139,12 +140,12 @@ i.fa:hover{
     margin: 0;
 }
 .under_text a{
-    color: #d0d0d0;
+    color: #414141;
     text-decoration: none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .under_text a:hover{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 .under_info{
@@ -164,15 +165,16 @@ i.fa:hover{
     padding-bottom: 8px;
     margin-top: 10px;
     text-align: center;
+    background: linear-gradient(125deg, #faa792,#fdb5ff,#2980b9,#c2ff8c);
 }
 .bottom_inline{
+    color: rgb(56, 56, 56);
     opacity: .7;
-    color: grey;
     margin:30px 0px 30px 0px;
     font-size:14px;
 }
 .bottom a{
-    color: #999;
+    color: rgb(132, 85, 136);
     text-decoration: none;
 }
 .bottom a:hover{

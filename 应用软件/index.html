@@ -19,8 +19,9 @@
 		<img class="top_logo" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img>
 		<img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
 	</a>
-    <form action="/应用软件/index.html">
-        <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}">
+    <form action="index.html">
+        <i class="fa fa-search" onclick="searchOn()"></i><i class="fa fa-adjust" onclick="onCss()"></i>
+        <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}"><div class="tsCloose" onclick="searchOff()"><i class="fa fa-times"></i></div>
     </form>
 </div>
 <!-- /顶部布局 -->

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/k34869/zhu/favicon.ico" type="image/x-icon">
     <title>时科资源 - Time Science</title>
     <script src="https://cdn.jsdelivr.net/gh/k34869/zhu/js/lod.script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/style.min.css">
+    <link id="onCss" rel="stylesheet" href="/css/styleNight.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/k34869/zhu/css/normalize.min.css">
 </head>
@@ -20,7 +20,8 @@
 		<img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
 	</a>
     <form action="index.html">
-        <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}">
+        <i class="fa fa-search" onclick="searchOn()"></i><i class="fa fa-adjust" onclick="onCss()"></i>
+        <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}"><div class="tsCloose" onclick="searchOff()"><i class="fa fa-times"></i></div>
     </form>
 </div>
 <!-- /顶部布局 -->
@@ -29,6 +30,7 @@
 <div class="route">
     <p><a id="route_url" href="index.html">🚩Home</a></p>
 </div>
+
 <div id="main">
 <div class="under" title="文档材料">
     <div class="under_img"><i class="fa fa-folder-o"></i></div>
@@ -72,13 +74,9 @@
 
 </div>
 <!-- /主体内容 -->
-
-<!-- 底部布局 -->
 <div class="bottom">
-    <p class="bottom_inline">©Copyright <a href="https://www.timeic.xyz/">Time Science</a> 2021.<br>All Rights Reserved</p>
+<p class="bottom_inline">©Copyright <a href="https://www.timeic.xyz/">Time Science</a> 2021.<br>All Rights Reserved</p>
 </div>
-<!-- /底部布局 -->
-
 <script type="text/javascript">
 pall = document.getElementsByClassName("under").length;
 for(i=0;i<pall;i++){
