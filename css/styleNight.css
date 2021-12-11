@@ -27,6 +27,9 @@ span.inl{
 .top_title{
     margin: 12px 0px 12px 0px;
 }
+.top_logo,.top_title{
+    cursor:pointer;
+}
 .top_title:active{
     content: url('https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title2.png');
 }
