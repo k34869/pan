@@ -1,248 +1,8 @@
-body{
-    background: rgb(254,243,235);
-    color: white;
-}
-span.inl{
-    color: #999;
-}
-.top_layout{
-    background-color: #f3f3f3;
-    box-shadow: 0.1px 0.2px 5px grey;
-    width:100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-}
-.top_a{
-    outline: none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-    text-decoration: none;
-}
-.top_logo{
-    margin: 11px 0px 8px 75px;
-}
-.top_logo:active{
-    content: url('https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo2.png');
-}
-.top_title{
-    margin: 12px 0px 12px 0px;
-}
-.top_logo,.top_title{
-    cursor:pointer;
-}
-.top_title:active{
-    content: url('https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title2.png');
-}
-form{
-    float: right;
-}
-#text{
-    display: none;
-    padding:8px;
-    margin-top:14px;
-    border:1px solid grey;
-    border-radius:10px 0 0 10px;
-    width:162px;
-    background:transparent;
-    color:rgb(85, 85, 85);
-    border-right: none;
-    outline: none;
-}
-.fa-search,.fa-adjust,.under,.under_title,.tsCloose{
-    transition-property: background-color,color,text-decoration;
-    transition-duration: 0.2s,0.2s;
-}
-.fa.fa-search{
-    font-size: 18px;
-    line-height: 62px;
-    color: rgb(116, 112, 112);
-}
-.fa.fa-adjust{
-    margin:0 66px 0 15px;
-    font-size: 18px;
-    line-height: 62px;
-    color: rgb(116, 112, 112);
-}
-.tsCloose{
-    display: none;
-    margin-right:80px;
-    padding:8px;
-    padding-left: 11px;
-    margin-top:14px;
-    border:1px solid grey;
-    border-radius:0 10px 10px 0;
-    width:18px;
-    border-left: none;
-}
-.tsCloose:hover{
-    background-color: #555555;
-}
-.fa.fa-times{
-    font-size: 17px;
-    color:#b1b1b1;
-}
-#main{
-    box-shadow: 0 5px 10px 0 rgb(144 164 174 / 40%);
-    background-color: white;
-    max-width: 810px;
-    width: calc(100% - 10px);
-    margin: 0 auto;
-}
-.route{
-    max-width: 800px;
-    width: calc(100% - 20px);
-    margin: 84px auto 20px auto;
-    font-size: 14px;
-}
-.route a{
-    color: #858585;;
-    text-decoration: none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-.route a:hover{
-    color: rgb(0, 0, 0);
-}
-.under{
-    display: flex;
-    align-items: center;
-    display: none;
-    overflow: hidden;
-    border-bottom: 1px solid rgb(196, 196, 196);
-}
-.under a{
-    transition: 0.2s all ease-in-out;
-}
-.under:hover{
-    background-color: rgba(141, 141, 141, 0.2);
-}
-.under_img{
-    display:table-cell;
-    text-align:center;
-    vertical-align:middle;
-    width: 50px;
-    margin: 0 5px 0 8px;
-    float: left;
-}
-i.fa{
-    font-size: 32px;
-    color: #b98dd1;
-}
-i.fa:hover{
-    color: #e04bd9;
-}
-.under_text{
-    padding: 10px 0;
-    overflow: hidden;
-    margin: 0;
-}
-.under_text p:first-child{
-    margin: 5px 0 12px 0;
-}
-.under_title{
-    overflow: hidden;
-    margin: 0;
-}
-.under_text a{
-    color: #414141;
-    text-decoration: none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-.under_text a:hover{
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-}
-.under_info{
-    overflow: hidden;
-    position: relative;
-    bottom: 4px;
-    font-size: 12px;
-    margin: 0;
-    color: #707070;
-}
-.bottom{
-    position: fixed;
-    bottom: 0;
-    border-top: 0.5px solid rgb(172, 172, 172);
-    width: 100%;
-    height:80px;
-    padding-bottom: 8px;
-    margin-top: 10px;
-    text-align: center;
-    background: linear-gradient(125deg, #faa792,#fdb5ff,#2980b9,#c2ff8c);
-}
-.bottom_inline{
-    color: rgb(56, 56, 56);
-    opacity: .7;
-    margin:30px 0px 30px 0px;
-    font-size:14px;
-}
-.bottom a{
-    color: rgb(132, 85, 136);
-    text-decoration: none;
-}
-.bottom a:hover{
-    color: white;
-    text-decoration: underline;
-}
-@media only screen and (max-width: 800px) {
-    #text{
-        width: 142px;
-    }
-    .tsCloose{
-        margin-right: 40px;
-    }
-    .top_logo{
-        margin-left: 40px;
-    }
-    .fa.fa-adjust{
-        margin:0 50px 0 15px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .top_logo{
-        margin: 11px 0px 8px 25px;
-    }
-    .tsCloose{
-        margin-right: 15px;
-    }
-    .fa.fa-adjust{
-        margin:0 26px 0 15px;
-    }
-}
-@media only screen and (max-width: 390px) {
-	#text {
-        width:107px
-    }
-}@media only screen and (max-width:352px) {
-	#text {
-        width:82px
-    }
-}@media only screen and (max-width:330px) {
-	#text {
-        width:62px
-    }
-}@media only screen and (max-width:310px) {
-	#text {
-        width:42px
-    }
-}@media only screen and (max-width:290px) {
-	.top_layout {
-        text-align:center;
-    }
-    form {
-        float:none
-    }
-    #text {
-        width:142px;
-    }
-    .tsCloose{
-        margin:0 0 10px 0;
-    }
-    .route {
-        margin-top:128px
-    }
-}
-html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>linux发展</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -250,7 +10,7 @@ iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { background-color: #1f1c20; margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -1098,13 +858,13 @@ footer.stopselect.ty-footer {
     body,
     content,
     #write {
-        background: #1f1c20;
+        background: var(--bg-write);
     }
 }
 
 @media (min-width:1100px) {
     #write {
-        box-shadow: #1f1c20;
+        box-shadow: var(--block-shadow-strong);
         border-radius: 5px;
         margin-top: 5rem;
         padding: 2rem 4rem;
@@ -1326,7 +1086,7 @@ content,
     font-size: var(--font-size);
     font-family: var(--font-family);
     line-height: var(--line-height);
-    background: #1f1c20;
+    background: var(--bg-contents);
     color: var(--color-text);
 }
 
@@ -1335,7 +1095,7 @@ content {
 }
 
 #write {
-    background: #1f1c20;
+    background: var(--bg-write);
     max-width: 60rem;
     min-height: calc(100vh - 6rem);
     text-align: justify;
@@ -2136,3 +1896,16 @@ blockquote code {
     border-left: 2px solid hsl(100, 100%, 75%) !important;
     width: 2px !important;
 }
+
+
+</style>
+</head>
+<body class='typora-export os-windows'>
+<div id='write'  class=''><p><span>Linux是一套免费使用和自由传播的类Unix操作系统，是一个基于</span><a href='https://baike.baidu.com/item/%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3'><span>POSIX</span></a><span>和UNIX的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的UNIX工具软件、应用程序和网络协议。支持32位和64位硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</span></p><p><img src="https://gitee.com/k34869/imges/raw/master/博客图片/X4x!0^7sAAeR.png" alt="linux" style="zoom:80%;" /></p><p><span>Linux的前身是Unix( 诞生于贝尔实验室，起初命名为 </span><strong><span>UNICS</span></strong><span> ) ，早在Linux出现之前的二十年（1970年代）</span></p><h2><a name="发展历史" class="md-header-anchor"></a><span>发展历史</span></h2><p><span>1965年</span><strong><span>贝尔实验室Bell</span></strong><span>、</span><strong><span>麻省理工学院MIT</span></strong><span>、</span><strong><span>奇异公司GE</span></strong><span>，发起了 </span><a href="https://baike.baidu.com/item/multics/10409946"><span>Multics</span></a><span> 计划，其目标是开发一种交互式的具有多道程序处理能力的</span><strong><span>分时操作系统</span></strong><span>。</span></p><p><img src="https://gitee.com/k34869/imges/raw/master/博客图片/dZFQtjzPoM*R.jpg" referrerpolicy="no-referrer" alt="unix"></p><p><span>1969年 由于资金不足、计划进度等问题，贝尔研究室则选择退出Multics计划，但是原计划的人员中有一位 </span><a href="https://baike.baidu.com/item/Ken%20Thompson/3441433"><span>Ken Thompson（肯·汤姆森）</span></a>
+<span>1969年8月，这哥们趁老婆不在家自己用4周时间使用</span><strong><span>汇编语言</span></strong><span>在DEC PDP-7这台机器上写了一个核心程序，汤姆森将Multics计划中的系统简化了，最后叫</span><strong><span>Unics</span></strong><span>（还不叫Unix）</span></p><p><img src="https://gitee.com/k34869/imges/raw/master/timeic/PEUdG2p8SrhP.jpg" referrerpolicy="no-referrer" alt="kl"></p><p><span>1971年，肯·汤姆森的同事丹尼斯·里奇发明了</span><a href="https://baike.baidu.com/item/c%E8%AF%AD%E8%A8%80/105958?fr=kg_general"><span>C语言</span></a><span>，之后之后 1973年 Unix系统的绝大部分的源代码用C语言重写，这为提高Unix系统的可移植性打下了基础。</span></p><p><span>1977年</span><strong><span>柏克莱大学</span></strong><span>的 </span><a href='https://baike.baidu.com/item/%E5%A8%81%E5%BB%89%C2%B7%E7%BA%B3%E5%B0%94%E9%80%8A%C2%B7%E4%B9%94%E4%BC%8A/10735666'><span>bill joy</span></a><span> 对Unix代码进行修改后命名为Berkeley Software Distribution（ </span><a href="https://baike.baidu.com/item/BSD/3794498"><span>BSD</span></a><span> ）用于教学。</span>
+<span>由于 </span><a href="https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E7%94%B5%E8%AF%9D%E7%94%B5%E6%8A%A5%E5%85%AC%E5%8F%B8/3454291"><span>AT&amp;T</span></a><span> 禁止大学使用Unix源代码进行教学，柏克莱大学的 </span><a href="https://baike.baidu.com/item/Anderw%20S.Tanenbaum/9473136"><span>Tanenbaum</span></a><span>（坦嫩鲍姆）教授极为不满，一怒之下编写了个类似的系统，取名 </span><a href="https://baike.baidu.com/item/Minix/7106045"><span>Minix</span></a><span> ——mini-Uinix的意思。这个操作系统非常简单，代码只有12000行，它的出现导致了另外一个神级操作系统的诞生。</span></p><p><span>1984年</span><a href="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E9%A9%AC%E4%BF%AE%C2%B7%E6%96%AF%E6%89%98%E6%9B%BC/2122303?fromtitle=Richard%20Matthew%20Stallman&fromid=11164798&fr=aladdin"><span>Richard Mathew Stallman</span></a><span>（史托曼）发起 </span><a href="https://baike.baidu.com/item/GNU%E8%AE%A1%E5%88%92/981157"><span>GNU计划</span></a><span>，计划目的时：建立一个自由、开放的 Unix 操作系统。于是他不仅宣传让同事使用此内核程序，自己还开始编写C语言的编译器也就是 </span><strong><span>gcc</span></strong></p><p><span>1990年，GNU计划已经开发出的软件包括了一个功能强大的文字编辑器Emacs、C语言编译器GCC以及大部分UNIX系统的程序库和工具。唯一依然没有完成的重要组件，就是操作系统的内核（称为HURD）。</span></p><p><strong><span>GNU开发的几个重要软件：</span></strong></p><ul><li><a href="https://baike.baidu.com/item/emacs/2044183"><span>Emacs</span></a><span> 代码编辑器工具</span></li><li><span>GNU C （ </span><a href="https://baike.baidu.com/item/GCC/17570"><span>GCC</span></a><span> ）</span></li><li><span>GNU C Library （ </span><a href="https://baike.baidu.com/item/glibc/10058561"><span>glibc</span></a><span> ）</span></li><li><a href="https://baike.baidu.com/item/bash/6367661"><span>Bash</span></a><span> shell</span></li></ul><p><span>后来的很多软件都可以通过这些基础程序开发。</span></p><h3><a name="linux正式诞生" class="md-header-anchor"></a><span>Linux正式诞生！</span></h3><p><img src="https://gitee.com/k34869/imges/raw/master/博客图片/7ufNr2WD!5kX.jpg" alt="Linus" style="zoom: 45%;" /></p><p><span>1991年 芬兰 </span><strong><span>赫尔辛基大学</span></strong><span>的学生</span><strong><span>Linus Torvalds</span></strong><span>在操作系统课程上学习了Minix，并将其运行386机器上，之后他使用GNU开源工具写了一个兼容Unix的核心程序（Linux）并在GPL条款下发布。Linux之后在网上广泛流传，许多程序员参与了开发与修改。</span></p><p><span>1992年，Linux与其他GNU软件结合，完全自由的操作系统正式诞生。该操作系统往往被称为“</span><strong><span>GNU/Linux</span></strong><span>”或简称Linux。</span></p><blockquote><p><span>PS：GNU（GNU‘S Not Unix / gnu不是Unix），在程序中是无限循环意思。</span></p></blockquote><h3><a name="开源软件的特点" class="md-header-anchor"></a><span>开源软件的特点</span></h3><ul><li><span>使用的自由</span>
+<span>绝大多数来源软件免费</span></li><li><span>研究的自由</span>
+<span>可以获得软件源代码</span></li><li><span>散布及改良的自由</span>
+<span>可以自由传播、改良甚至销售</span></li></ul><h3><a name="关于-linux-logo-的由来" class="md-header-anchor"></a><span>关于 Linux Logo 的由来</span></h3><p><img src="https://gitee.com/k34869/imges/raw/master/timeic/uI51jndgpW1z.jpg" alt="linux_logo" title="linux_logo" width="40%" style="border-radius:50%" /></p><p><span>关于 Linux Logo 的由来是一个很有意思的话题，它是一只企鹅。</span></p><p><span>为什么选择企鹅，而不是选择狮子、老虎或者小白兔？有人说因为李纳斯•托瓦兹是芬兰人，所以选择企鹅，有人说因为其他动物图案都被用光了，李纳斯•托瓦兹只好选择企鹅。我更愿意相信以下说法，企鹅是南极洲的标志性动物，根据国际公约，南极洲为全人类共同所有，不属于世界上的任何国家，可国家都无权将南极洲纳入其版图。Linux 选择企鹅图案作为 Logo，其含义是：开放源代码的 Linux 为全人类共同所有，可公司无权将其私有。</span></p><h2><a name="应用领域" class="md-header-anchor"></a><span>应用领域</span></h2><h3><a name="linux作为企业级服务器的应用" class="md-header-anchor"></a><strong><span>Linux作为企业级服务器的应用</span></strong></h3><p><img src="https://gitee.com/k34869/imges/raw/master/timeic/fgxtTquFbq91.jpg" alt="Linus" style="zoom: 45%;" /></p><p><span>Linux作为</span><a href='https://baike.baidu.com/item/%E4%BC%81%E4%B8%9A%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8/484587'><span>企业级服务器</span></a><span>的应用十分广泛，利用Linux系统可以为企业构架WWW服务器、数据库服务器、负载均衡服务器、邮件服务器、DNS服务器、代理服务器(透明网关)、路由器等，不但使企业降低了运营成本，同时还获得了Linux系统带来的高稳定性和高可靠性。</span></p><p><span>随着Linux在服务器领域的广泛应用，从近几年的发展来看，该系统已经渗透到了电信、金融、政府、教育、银行、石油等各个行业，同时各大硬件厂商也相继支持Linux操作系统。这一切都在表明，Linux在服务器市场的前景是光明的。同时，大型、超大型互联网企业(百度、新浪、淘宝等)都在使用Linux系统作为其服务器端的程序运行平台，全球及国内排名前十的网站服务器使用的几乎都是Linux系统，Linux已经逐步渗透到各个领域的企业里。</span></p><h3><a name="嵌入式linux系统应用领域" class="md-header-anchor"></a><strong><span>嵌入式Linux系统应用领域</span></strong></h3><p><span>由于Linux系统开放源代码，功能强大、可靠、稳定性强、灵活，而且具有极大的伸缩性，再加上它广泛支持大量的微处理器体系结构、硬件设备、图形支持和通信协议，因此，在</span><a href='https://baike.baidu.com/item/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/186978'><span>嵌入式</span></a><span>应用的领域里，从因特网设备(路由器、交换机、防火墙、负载均衡器等)到专用的控制系统(自动售货机、手机、PDA、各种家用电器等)，Linux操作系统都有很广阔的应用市场。特别是经过这几年的发展，它已经成功地跻身于主流嵌入式开发平台。例如，在智能手机领域，Android Linux已经在智能手机开发平台牢牢地占据了一席之地。</span></p><p><img src="https://gitee.com/k34869/imges/raw/master/timeic/@moHSvzbdlsP.jpg" alt="Android" style="zoom: 33%;" /></p><h3><a name="个人桌面linux应用领域" class="md-header-anchor"></a><strong><span>个人桌面Linux应用领域</span></strong></h3><p><span>所谓个人桌面系统，其实就是我们在办公室使用的个人计算机系统， 例如： Windows XP、Windows 7、MAC等。Linux系统在这方面的支持也已经非常好了，完全可以满足日常的办公及家用需求，例如：</span></p><ul><li><span>浏览器上网浏览(例如：</span><a href='https://baike.baidu.com/item/Mozilla%20Firefox/3504923'><span>Firefox</span></a><span>浏览器)。</span></li><li><span>办公室软件(</span><a href='https://baike.baidu.com/item/OpenOffice/7384410'><span>OpenOffice</span></a><span>，兼容微软Office软件)处理数据。</span></li><li><span>收发电子邮件(例如：ThunderBird 软件)。</span></li><li><span>实时通信(例如：QQ 等)。</span></li><li><span>文字编辑(例如：vi、vim、emac)。</span></li><li><span>多媒体应用。</span></li></ul><p><span>虽然Linux个人桌面系统的支持已经很广泛了，但是在当前的桌面市场份额还远远无法与Windows系统竞争，这其中的障碍可能不在于Linux桌面系统产品本身，而在于用户的使用观念、操作习惯和应用技能，以及曾经在Windows上开发的软件的移植问题。</span></p><p><a href="http://coolshell.cn/articles/2322.html" alt="Unix传奇@coolshell.cn" title="Unix传奇@coolshell.cn"><a href='http://coolshell.cn/articles/2322.html' target='_blank' class='url'>http://coolshell.cn/articles/2322.html</a></a></p></div>
+</body>
+</html>
