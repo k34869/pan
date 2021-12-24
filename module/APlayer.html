@@ -19,10 +19,13 @@
 <body>
 <!-- 顶部布局 -->
 <div class="top_layout">
-	<img class="top_logo" onclick="alert('作者：Time Science\n博客：https\:\/\/www.timeic.xyz/\n微信：tsk34869')" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img><img class="top_title" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title.png" width="105px"></img>
-    <form action="index.html">
-        <i class="fa fa-adjust" onclick="onCss()"></i>
-    </form>
+    <div class="header">
+        <img class="top_logo" src="https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo.png" width="40px"></img><p onclick="setTimeout(function(){alert('作者：Time Science\n博客：https\:\/\/www.timeic.xyz/\n微信：tsk34869')},100)" class="headerText">Time Science</p>
+        <form action="index.html">
+            <i class="fa fa-search none" onclick="searchOn()"></i><i class="fa fa-adjust" onclick="onCss()"></i>
+            <input id="text" type="text" name="s" value="搜索" onFocus="if(value=='搜索') {value=''}" onBlur="if(value==''){value='搜索'}"><div class="tsCloose" onclick="searchOff()"><i class="fa fa-times"></i></div>
+        </form>
+    </div>
 </div>
 <!-- /顶部布局 -->
 

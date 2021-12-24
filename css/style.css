@@ -8,37 +8,59 @@ span.inl{
 .top_layout{
     background: #1f1c20;
     width:100%;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
     border-bottom: 1px solid #404040;
     position: fixed;
     top: 0;
     z-index: 3;
 }
 .top_logo{
-    margin: 11px 0px 8px 75px;
+    margin:12px 0 0 10px;
+    transition: all .5s;
 }
 .top_logo:active{
     content: url('https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_logo2.png');
 }
-.top_title{
-    margin: 12px 0px 12px 0px;
+.top_logo:hover{
+    transform: rotate(360deg);
 }
-.top_logo,.top_title{
-    cursor:pointer;
+.header{
+    max-width: 810px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
 }
-.top_title:active{
-    content: url('https://cdn.jsdelivr.net/gh/k34869/zhu/images/top_title2.png');
+.headerText{
+    display: inline-block;
+    line-height: 67px;
+    font-size: 18px;
+    margin: 0;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition-property:background-color,color,text-decoration;
+	transition-duration:.2s,0.2s
+}
+.headerText:active{
+    color: white;
 }
 form{
     float: right;
 }
 #text{
     display: none;
+    opacity: 0;
+    transition: 1s;
     padding:8px;
     margin-top:14px;
     border:0.5px solid grey;
     border-radius:10px 0 0 10px;
     width:162px;
-    background:#1f1c20;
+    font-size: 16px;
+    font-family: "Segoe UI", sans-serif;
+    background:inherit;
     color:white;
     border-right: none;
     outline: none;
@@ -49,18 +71,23 @@ form{
 }
 .fa.fa-search{
     font-size: 18px;
-    line-height: 62px;
+    line-height: 65px;
     color:#ebdfdf;
 }
+.fa-search.none{
+    display: none !important;
+}
 .fa.fa-adjust{
-    margin:0 66px 0 15px;
+    margin:0 12px 0 15px;
     font-size: 18px;
-    line-height: 62px;
+    line-height: 65px;
     color: #ebdfdf;
 }
 .tsCloose{
     display: none;
-    margin-right:80px;
+    opacity: 0;
+    transition: 1s;
+    margin-right:6px;
     padding:8px;
     padding-left: 11px;
     margin-top:14px;
@@ -162,11 +189,12 @@ i.fa:hover{
     padding-bottom: 8px;
     margin-top: 10px;
     text-align: center;
+    background:linear-gradient(125deg,#11100d,#201a1a,#0f1b1f,#1f1c20)
 }
 .bottom_inline{
     opacity: .7;
     color: grey;
-    margin:30px 0px 30px 0px;
+    margin:30px 0 30px 0;
     font-size:14px;
 }
 .bottom a{
@@ -181,55 +209,37 @@ i.fa:hover{
     #text{
         width: 142px;
     }
-    .tsCloose{
-        margin-right: 40px;
-    }
-    .top_logo{
-        margin-left: 40px;
-    }
-    .fa.fa-adjust{
-        margin:0 50px 0 15px;
-    }
 }
-@media only screen and (max-width: 600px) {
-    .top_logo{
-        margin: 11px 0px 8px 25px;
-    }
-    .tsCloose{
-        margin-right: 15px;
-    }
-    .fa.fa-adjust{
-        margin:0 26px 0 15px;
-    }
-}
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 410px) {
 	#text {
-        width:107px
+        width:125px
     }
-}@media only screen and (max-width:352px) {
+}@media only screen and (max-width:390px) {
 	#text {
-        width:82px
+        width:95px
     }
-}@media only screen and (max-width:330px) {
+}@media only screen and (max-width:359px) {
 	#text {
-        width:62px
+        width:70px
+    }
+}@media only screen and (max-width:334px) {
+	#text {
+        width:45px
     }
 }@media only screen and (max-width:310px) {
-	#text {
-        width:42px
-    }
-}@media only screen and (max-width:290px) {
 	.top_layout {
         text-align:center;
     }
     form {
-        float:none
+        float:none;
+        padding-bottom: 10px;
     }
     #text {
+        margin-top: 0;
         width:142px;
     }
     .tsCloose{
-        margin:0 0 10px 0;
+        margin-top: 0;
     }
     .route {
         margin-top:128px
