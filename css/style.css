@@ -8,8 +8,8 @@ span.inl{
 .top_layout{
     background: #1f1c20;
     width:100%;
+    box-shadow: 0.1px 0.2px 5px #353136;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
-    border-bottom: 1px solid #404040;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -104,7 +104,7 @@ form{
     color:#ebdfdf;
 }
 #main{
-    box-shadow:rgb(60, 60, 60) -0.01px -0.01px 1.5px 0px;
+    box-shadow: 0 0 15px 0 #353136;
     max-width: 810px;
     width: calc(100% - 10px);
     margin: 0 auto;
